@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title"><img src="zomato logo.png" alt="Zomato logo"></h1>
+    <h2>Survey Form</h2>
+    <p id="description">Help us improve by answering this survey form</p>
+    <div class="survey">
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name: <input placeholder="Enter your Name" required type="text" name="name" id="name"></label>
+                <label id="email-label" for="email">Email: <input placeholder="Enter your Email" required type="email" name="email" id="email"></label>
+                <label id="number-label" for="age">Age: <input placeholder="Age" min="12" max="120" required type="number" name="age" id="age"></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Feedback for: <select name="Service" id="dropdown">
+                    <option value="0">Select Value</option>
+                    <option value="1">Zomato</option>
+                    <option value="2">Blinkit</option>
+                </select></label>
+                <p class="feedback">How do you like our services:
+                    <label for="vnice"><input checked type="radio" name="feedback" id="vnice" value="5"> Very nice</label>
+                    <label for="nice"><input type="radio" name="feedback" id="nice" value="4"> Nice</label>
+                    <label for="ok"><input type="radio" name="feedback" id="ok" value="3"> Okay</label>
+                    <label for="belowavg"><input type="radio" name="feedback" id="belowavg" value="2"> Below Average</label>
+                    <label for="bad"><input type="radio" name="feedback" id="bad" value="1"> Disappointed</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p class="issues">Issues you have faced:
+                    <label for="late"><input type="checkbox" name="late" id="late" value="late"> Late Delivery</label>
+                    <label for="wrong"><input type="checkbox" name="wrong" id="wrong" value="wrong"> Wrong Order Delivered</label>
+                    <label for="driver"><input type="checkbox" name="driver" id="driver" value="driver"> Issue with the Delivery Partner</label>
+                    <label for="refund"><input type="checkbox" name="refund" id="refund" value="refund"> Issue with refund</label>
+                </p>
+                <p class="comments">Some other issue:
+                    <textarea name="comments" id="addcomments" placeholder="Enter your feedback here....."></textarea>
+                </p>
+            </fieldset>
+            <input value="Submit" class="submit" type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
